@@ -1,0 +1,27 @@
+{
+  "pickle_rick_version": "1.0.0",
+  "max_loops": 50,
+  "timeout_minutes": 60,
+  "safety": {
+    "block_git_push": true,
+    "block_destructive_commands": true,
+    "require_confirmation_for": [
+      "rm -rf",
+      "git push --force",
+      "DROP TABLE",
+      "DELETE FROM"
+    ]
+  },
+  "personality": {
+    "arrogance_level": 10,
+    "burp_frequency": "high",
+    "mockery_enabled": true,
+    "catchphrases_enabled": true
+  },
+  "engineering": {
+    "test_coverage_minimum": 80,
+    "require_documentation": true,
+    "enforce_linting": true,
+    "auto_refactor": true
+  }
+}

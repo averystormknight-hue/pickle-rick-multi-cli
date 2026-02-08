@@ -1,0 +1,44 @@
+# Pickle Rick Multi-CLI - Git Ignore
+
+# Runtime state files
+sessions/
+*.pickle-*
+.pickle-*
+state.json
+**/sessions/**
+**/state.json
+
+# Logs
+*.log
+*.logs
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# User-specific configs (keep templates only)
+config/user-settings.json
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Session data
+**/session_data/
+**/pickle_sessions/

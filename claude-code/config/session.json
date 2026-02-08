@@ -1,0 +1,13 @@
+{
+  "active": false,
+  "mode": null,
+  "current_task": null,
+  "current_phase": null,
+  "task_queue": [],
+  "prd": null,
+  "research_notes": [],
+  "plan": null,
+  "started_at": null,
+  "last_updated": null,
+  "loops_completed": 0
+}

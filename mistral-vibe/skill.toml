@@ -1,0 +1,7 @@
+[skill]
+name = "pickle-rick"
+description = "Autonomous coding agent with Rick Sanchez personality - Full engineering lifecycle"
+version = "2.0.0"
+
+[skill.activation]
+commands = ["/pickle", "/pickle-prd", "/add-to-pickle-jar", "/pickle-jar-open", "/eat-pickle", "/pickle-status"]
