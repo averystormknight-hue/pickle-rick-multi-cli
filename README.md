@@ -39,9 +39,9 @@ Pickle Rick is an autonomous coding agent with the personality of Rick Sanchez (
 |----------|--------|----------|
 | **Claude Code** | ✅ Full God Mode | Autonomous loops, hooks, session management |
 | **Qwen Code** | ✅ Full Port | Complete Gemini clone (by Alibaba) |
-| **Mistral Vibe** | ✅ Skill-based | Manual loop management |
-| **Codex (OpenAI)** | ✅ Skill-based | Auto-discovery |
-| **Kimi Code** | ⚠️ Limited | Manual workaround (no extension support yet) |
+| **Mistral Vibe** | ✅ Skill-based | Auto-activates when enabled in config |
+| **Codex (OpenAI)** | ✅ Skill-based | Select from menu |
+| **Kimi Code** | ✅ Skill-based | `/skill:` command activation |
 
 ## 📦 Installation
 
@@ -155,17 +155,20 @@ Exit: `Exit the pickle-rick skill` or `/new`
 <summary>Kimi Code</summary>
 
 ```bash
-# Copy to Kimi directory
-cp -r kimi-code ~/.kimi/pickle-rick
+# Copy to skills directory
+cp -r kimi-code ~/.kimi/skills/pickle-rick
 ```
 
-⚠️ **Note:** Kimi doesn't support extensions yet. Manual workaround:
+Kimi auto-discovers skills in `~/.kimi/skills/`
 
+Usage:
 ```bash
-kimi -p "$(cat ~/.kimi/pickle-rick/prompt.txt)" "Your task here"
+kimi
+/skill:pickle-rick
+# Choose "Initialize" when prompted
 ```
 
-See `kimi-code/README.md` for details.
+Exit: `stop pickle-rick skill`
 </details>
 
 ## 🎮 Usage Examples
@@ -196,6 +199,16 @@ vibe
 Hey, can you help me?
 # Rick: *BURP* I'm Pickle Rick! Of course I can help...
 ```
+
+**Kimi Code** (Skill command):
+```bash
+kimi
+/skill:pickle-rick
+# Choose "Initialize" when prompted
+# Rick: *BURP* Alright Morty, I'm Pickle Rick!
+```
+
+Exit: `stop pickle-rick skill`
 
 ### Interactive Mode (Claude Example)
 

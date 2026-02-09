@@ -126,16 +126,18 @@ install_kimi() {
     echo "Installing for Kimi Code..."
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
-    if [ -d ~/.kimi/pickle-rick ]; then
-        echo -e "${YELLOW}⚠${NC}  Kimi doesn't support extensions yet"
-        echo "   Location: ~/.kimi/pickle-rick/ (manual workaround)"
+    if [ -d ~/.kimi/skills/pickle-rick ]; then
+        echo -e "${GREEN}✓${NC} Kimi Code version already installed"
+        echo "   Location: ~/.kimi/skills/pickle-rick/"
+        echo "   Kimi auto-discovers skills in ~/.kimi/skills/"
+        echo -e "${GREEN}✓${NC} Kimi installation complete"
         echo ""
-        echo "   ${YELLOW}USAGE:${NC} Kimi requires manual prompt invocation:"
-        echo "   kimi -p \"\$(cat ~/.kimi/pickle-rick/prompt.txt)"
+        echo "   ${GREEN}USAGE:${NC}"
+        echo "   kimi"
+        echo "   /skill:pickle-rick"
+        echo "   (Choose 'Initialize' when prompted)"
         echo ""
-        echo "   Your task here\""
-        echo ""
-        echo "   See ~/.kimi/pickle-rick/README.md for details"
+        echo "   To exit: 'stop pickle-rick skill'"
     else
         echo -e "${RED}✗${NC} Kimi installation not found"
     fi
@@ -235,9 +237,10 @@ if [[ " ${INSTALLED_CLIS[@]} " =~ " codex " ]]; then
 fi
 
 if [[ " ${INSTALLED_CLIS[@]} " =~ " kimi " ]]; then
-    echo "  ${YELLOW}Kimi Code (manual):${NC}"
-    echo "    kimi -p \"\$(cat ~/.kimi/pickle-rick/prompt.txt)"
-    echo "    Your task\""
+    echo "  ${GREEN}Kimi Code:${NC}"
+    echo "    kimi"
+    echo "    /skill:pickle-rick"
+    echo "    (Choose 'Initialize')"
     echo ""
 fi
 
@@ -246,7 +249,7 @@ echo "  - Claude: ~/.claude/extensions/pickle-rick/README.md"
 echo "  - Qwen: ~/.qwen/extensions/pickle-rick/README.md"
 echo "  - Vibe: ~/.vibe/skills/pickle-rick/README.md"
 echo "  - Codex: ~/.codex/skills/pickle-rick/README.md"
-echo "  - Kimi: ~/.kimi/pickle-rick/README.md"
+echo "  - Kimi: ~/.kimi/skills/pickle-rick/README.md"
 echo ""
 echo "*I'm Pickle Riiiiick!* 🥒💚"
 echo ""
