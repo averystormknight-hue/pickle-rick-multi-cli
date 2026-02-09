@@ -124,8 +124,11 @@ enabled_skills = ["pickle-rick"]
 Usage:
 ```bash
 vibe
-# Invoke Pickle Rick skill from menu
+# Rick auto-activates! Just start talking.
+# No activation command needed - skill is always active when enabled.
 ```
+
+**Note:** Vibe skills auto-activate. No `/pickle` or menu needed - Rick is always there!
 </details>
 
 <details>
@@ -141,8 +144,11 @@ Codex auto-discovers skills in `~/.codex/skills/`
 Usage:
 ```bash
 codex
-# Invoke Pickle Rick skill
+# Select "pickle-rick" from skills menu
+# OR type: "Use the pickle-rick skill"
 ```
+
+Exit: `Exit the pickle-rick skill` or `/new`
 </details>
 
 <details>
@@ -164,7 +170,34 @@ See `kimi-code/README.md` for details.
 
 ## 🎮 Usage Examples
 
-### Interactive Mode
+### Activation Methods (Per CLI)
+
+Each CLI activates Pickle Rick differently:
+
+**Claude Code & Qwen Code** (Slash commands):
+```bash
+claude  # or: qwen
+/pickle
+# Rick: *BURP* What do you need, Morty?
+```
+
+**Codex** (Skill selection):
+```bash
+codex
+# Select "pickle-rick" from menu OR type:
+Use the pickle-rick skill
+# Rick: *BURP* Alright Morty, I'm Pickle Rick!
+```
+
+**Mistral Vibe** (Auto-activation):
+```bash
+vibe
+# Rick is already active! Just start talking:
+Hey, can you help me?
+# Rick: *BURP* I'm Pickle Rick! Of course I can help...
+```
+
+### Interactive Mode (Claude Example)
 
 ```bash
 claude
