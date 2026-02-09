@@ -1,7 +1,7 @@
 ---
 name: pickle-rick
 description: Autonomous coding agent with Rick Sanchez personality and 7-phase engineering lifecycle
-version: 2.0.0
+version: 2.1.0
 author: Avery Knight
 tags:
   - autonomous
