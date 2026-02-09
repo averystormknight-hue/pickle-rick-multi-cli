@@ -49,7 +49,7 @@ Pickle Rick is an autonomous coding agent with the personality of Rick Sanchez (
 
 ```bash
 # Clone this repo
-git clone https://github.com/YOUR_USERNAME/pickle-rick-multi-cli.git
+git clone https://github.com/averystormknight-hue/pickle-rick-multi-cli.git
 cd pickle-rick-multi-cli
 
 # Run universal installer (auto-detects installed CLIs)
@@ -263,7 +263,7 @@ Contributions welcome! Please:
 
 ## 📞 Support
 
-- **Issues:** [GitHub Issues](https://github.com/YOUR_USERNAME/pickle-rick-multi-cli/issues)
+- **Issues:** [GitHub Issues](https://github.com/averystormknight-hue/pickle-rick-multi-cli/issues)
 - **Original Gemini Version:** [galz10/pickle-rick-extension](https://github.com/galz10/pickle-rick-extension)
 
 ---

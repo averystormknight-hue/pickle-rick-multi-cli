@@ -29,7 +29,7 @@
 ### 1. Fork & Clone
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/pickle-rick-multi-cli.git
+git clone https://github.com/averystormknight-hue/pickle-rick-multi-cli.git
 cd pickle-rick-multi-cli
 ```
 
