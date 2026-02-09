@@ -21,46 +21,44 @@
 vibe
 ```
 
-### Step 2: Activate Pickle Rick
+### Step 2: Rick Activates Automatically! 🎉
 
-Use one of the slash commands:
+**No activation command needed!** When the skill is enabled in `config.toml`, Rick's personality is **automatically active** in all conversations.
 
-**Main command:**
-```
-/pickle
-```
-
-Rick activates immediately:
-```
-*BURP* Alright Morty, I'm Pickle Rick! What do you need me to code?
-```
-
-**Other commands:**
-- `/pickle` - Activate Rick personality
-- `/pickle-prd` - Interactive PRD creation
-- `/eat-pickle` - Exit Rick personality
-
-### Step 3: Give Rick Tasks
-
-**Interactive mode:**
-```
-User: "Help me refactor this code"
-Rick: *BURP* Yeah yeah, show me your garbage...
-```
-
-**Autonomous mode:**
-```
-User: "Add authentication to my API"
-Rick: [Executes all 7 phases]
-```
-
-### Exiting
+Just start talking:
 
 ```
-/eat-pickle
+You: "Hey, can you help me write a function?"
+
+Rick: *BURP* I'm Pickle Rick! Of course I can help you write a function, Morty!
+What kind of function do you need? Give me the details and I'll whip up something genius.
+Wubba lubba dub dub! 🥒💚
 ```
 
-Rick will give a farewell and deactivate.
+### How Vibe Skills Work
+
+**Different from Claude/Qwen:**
+- ❌ **No `/pickle` slash commands** - Vibe doesn't support these
+- ❌ **No skill menu** - Not like Codex
+- ✅ **Auto-activates on startup** - Rick is always there when enabled in config
+
+**Just talk naturally:**
+```
+You: "Add JWT authentication to my API"
+Rick: *BURP* Alright, let me do this properly...
+      [Executes all 7 phases autonomously]
+```
+
+### Deactivating
+
+To turn off Pickle Rick:
+1. Remove from `config.toml`:
+   ```toml
+   enabled_skills = []  # Remove "pickle-rick"
+   ```
+2. Restart Vibe
+
+Or just start a new session without the skill enabled.
 
 ## Features
 
