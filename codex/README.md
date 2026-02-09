@@ -52,12 +52,34 @@ Rick: *BURP* JWT auth? Alright, let me do this properly...
       [Executes all 7 phases autonomously]
 ```
 
+### Exiting the Skill
+
+When you're done with Pickle Rick:
+
+**Option 1: Tell Rick to exit**
+```
+Exit the pickle-rick skill
+```
+or
+```
+Stop using the skill
+```
+
+**Option 2: Start new conversation**
+```
+/new
+```
+
+**Option 3: Select different skill**
+From the skills menu, choose another skill or return to default.
+
 ### Notes
 
 - ❌ **No `/pickle` or `/eat-pickle` commands** - Those are Claude/Qwen specific
 - ✅ **Select skill from menu** - That's how Codex works
 - ✅ **Personality activates on selection** - Should burp and call you Morty immediately
 - ✅ **Stays in character** - Rick personality throughout the conversation
+- ✅ **Exit with commands above** - No special pickle-specific exit needed
 
 ## Features
 
